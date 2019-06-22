@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"  content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    
+    <script type="text/javascript" src="script.js"></script>
+    <link   rel ="stylesheet"  href = "style.css">
+	<title>Make up course</title>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+	<nav class="navbar navbar-expand-sm bg-light navbar-light justify-content-center navbar-fixed-top" style="background: linear-gradient(70deg, #0133A0, #BADBE4);">
+  		<ul class="navbar-nav"> 
+  			<li class="nav-item">
+      			<a class="nav-link" href="#home">HOME</a>
+    		</li>
+    		<li class="nav-item">
+      			<a class="nav-link" href="#about">О ПРОЕКТЕ</a>
+    		</li>
+    		<li class="nav-item">
+      			<a class="nav-link" href="#adv">ПРЕИМУЩЕСТВА</a>
+    		</li>
+  			<li class="nav-item dropdown">
+    			<a class="nav-link dropdown-toggle" style="color:white;" data-toggle="dropdown" href="#">КУРСЫ</a>
+    			<div class="dropdown-menu">
+      				<a class="dropdown-item" href="#makeup">КУРСЫ ПО МАКИЯЖУ</a>
+      				<a class="dropdown-item" href="#makeup">КУРСЫ ПО БРОВЯМ</a>
+      				<a class="dropdown-item" href="#makeup">КУРСЫ ПО РЕСНИЦАМ</a>
+    			</div>
+  			</li>
+    		<li class="nav-item">
+      			<a class="nav-link" href="#pay">СТОИМОСТЬ</a>
+    		</li>
+     		<li class="nav-item">
+      			<a class="nav-link" href="#gift">ПОДАРКИ</a>
+    		</li>
+    		<li class="nav-item">
+      			<a class="nav-link" href="#contact">КОНТАКТЫ</a>
+    		</li>
+  		</ul>
+	</nav>
+	<header class="showcase" id="home">
+		<div class="content">
+			<div class="title" style="text-shadow: 2px 2px 4px #000000;">
+			 	<b>Школа Макияжа</b>
+			</div>
+			<div class="text">
+			 	Курсы макияжа и коррекция бровей.
+                   <br>
+			    Обучение визажистов с нуля, со свободным графиком посещения!
+			</div>
+			<h1 style="text-shadow: 2px 2px 4px #000000;"><strong>До старта курса осталось :&nbsp;</strong></h1>
+     		<div id="clockdiv"> 
+     			<div> 
+    				<span class="days" id="day"></span> 
+    				<div class="smalltext">Days</div> 
+  				</div> 
+  				<div> 
+    				<span class="hours" id="hour"></span> 
+    				<div class="smalltext">Hours</div> 
+  				</div> 
+  				<div> 
+    				<span class="minutes" id="minute"></span> 
+    				<div class="smalltext">Minutes</div> 
+  				</div> 
+  				<div> 
+    				<span class="seconds" id="second"></span> 
+    				<div class="smalltext">Seconds</div> 
+  				</div> 
+			</div> 
+  		    <p id="demo"></p> 
+		</div>	
+	</header>
+    <div class="container-fluid text-center">
+  		<h2 style="text-shadow: 2px 2px 4px #000000;"><img src="images/correct2.png"  style="display:inline-block; padding-right: 5px;">Для кого этот online курс?</h2>
+  		<br>
+  		<div class="row">
+    		<div class="col-sm-4">
+    			<img src="images/56a044f6-3379-4fb4-8fd8-d31892ff335e.svg" style="width: 45%; height:45%;">
+      			<h4>офисных работников</h4>
+    		</div>
+    		<div class="col-sm-4">
+      			<img src="images/41fbd92d-ff37-437f-9148-88332a8cbd34.svg" style="width: 43%; height: 43%;">
+      			<h4>любителей макияжа</h4>
+    		</div>
+    		<div class="col-sm-4">
+     			<img src="images/13f7b625-1c3e-4b90-ae77-e82559858cb2.svg" style="width: 43%; height: 43%;">
+      			<h4>молодых мам</h4>
+    		</div>
+    	</div>
+    </div>
+    <br><br>
+    <div class="container">
+    <h1 style="text-shadow: 0 0 3px #FF0000; text-align: center;">К НАМ ЧАСТО ОБРАЩАЮТСЯ С ТАКИМИ ТРУДНОСТЯМИ В НАНЕСЕНИИ МАКИЕЖА:</h1>
+		<div class="container" style="text-shadow: 0 0 3px #FF0000; display: block; text-align: left; font-size:20px; padding-left:90px; padding-top: 30px; padding-bottom: 30px;">
+   			<div class="row">
+    			<div class="col-sm-12">
+      				<img src="images/img0026.png" style="padding-right:5px;"><span id="wb_uid7">МАКИЯЖ ВЫГЛЯДИТ <strong>НЕЕСТЕСТВЕННО</strong>, СОЗДАЕТ ЭФФЕКТ МАСКИ;</span>
+      			</div>
+      		</div>
+      		<br><br>
+      		<div class="row">
+      			<div class="col-sm-10">
+      				<img src="images/img0026.png" style="padding-right:5px;"><span id="wb_uid7">СТОЙКОСТЬ МАКИЯЖА ОСТАВЛЯЕТ <strong>ЖЕЛАТЬ ЛУЧШЕГО</strong>;</span>
+      			</div>
+      		</div>
+      		<br><br>
+      		<div class="row">
+      			<div class="col-sm-8">
+      				<img src="images/img0026.png"style="padding-right:5px;"><span id="wb_uid7">КОСМЕТИКА <strong>СКАТЫВАЕТСЯ</strong>&nbsp; <strong>И ОСЫПАЕТСЯ</strong>;</span>
+      			</div>
+      		</div>
+      		<br><br>
+      		<div class="row">
+      			<div class="col-sm-8">
+      				<img src="images/img0026.png" style="padding-right:5px;"><span id="wb_uid7"><strong>ОТПЕЧАТЫВАЮТСЯ</strong> ТЕНИ, ТУШЬ, КАРАНДАШ;</span>
+      			</div>
+      		</div>
+      		<br><br>
+      		<div class="row">
+      			<div class="col-sm-12">
+      				<img src="images/img0026.png" style="padding-right:5px;"><span id="wb_uid7">НЕ ПОЛУЧАЕТСЯ <strong>РОВНО И СИММЕТРИЧНО</strong> НАРИСОВАТЬ СТРЕЛКИ;</span>
+      			</div>
+      		</div>
+      		<br><br>
+      		<div class="row">
+      			<div class="col-sm-10">
+      				<img src="images/img0026.png" style="padding-right:5px;"><span id="wb_uid7">НА ПРОСТОЙ МАКИЯЖ УХОДИТ СЛИШКОМ <strong>МНОГО ВРЕМЕНИ</strong>;</span>
+      			</div>
+      		</div>
+      		<br><br>
+      		<div class="row">
+      			<div class="col-sm-10">
+      				<img src="images/img0026.png" style="padding-right:5px;"><span id="wb_uid7">В МАКИЯЖЕ <strong>ЧЕГО-ТО НЕ ХВАТАЕТ</strong>, НЕТ ВЫРАЗИТЕЛЬНОСТИ;</span>
+      			</div>
+      		</div>
+      		<br><br>
+      		<div class="row">
+      			<div class="col-sm-10">
+      				<img src="images/img0026.png" style="padding-right:5px;"><span id="wb_uid7">МАКИЯЖ У ВИЗАЖИСТА НЕ <strong>ОПРАВДЫВАЕТ НАДЕЖДЫ</strong>;</span>
+      			</div>
+      		</div>
+      		<br><br>
+      		<div class="row">
+      			<div class="col-sm-10">
+      				<img src="images/img0026.png" style="padding-right:5px;"><span id="wb_uid7"><strong>СЛОЖНО </strong><strong>НАЙТИ</strong> И ПОДОБРАТЬ ПОДХОДЯЩУЮ КОСМЕТИКУ;</span>
+      			</div>
+      		</div>
+      	</div>
+  	</div>
+</div>	
+
+</div>
+    <section id="about">
+    	<div class="container-fluid">
+   			<div class="row">
+    			<div class="col-sm-8 text-center">
+      				<h1 style="text-shadow: 2px 2px 4px #000000;"><img src="images/correct2.png"  style="padding-right: 5px;">О ПРОЕКТЕ</h1>
+      				<h2>Школа Макияжа открыта для новичков и профессионалов, для тех кто следит за тенденциями Make Up индустрии, влюблен в грим, любит экспериментировать и открыт для всего нового.</h2> 
+      				<p style="font-size:20px;">Если вы давно мечтали раскрыть свои таланты, научиться чему-то новому, раскрыть себя и связать свою жизнь с творчеством, то Санкт-Петербургская школа телевидения ждет вас! В нашей школе вы непременно найдете подходящий курс! Мы поддержим ваше хобби и поможем освоить его на профессиональном уровне. Начните обучение и сделайте первый шаг на пути к мечте в одном из 36 филиалов по всей России и СНГ!</p>
+      			</div>
+    			<div class="col-sm-4" style="padding-top:90px;">
+      				<span class="glyphicon glyphicon-signal logo"></span>
+    			</div>
+  			</div>
+		</div>	
+    </section>
+    <section id="adv">
+     	<div style="padding-top:120px;"> 
+    		<div class="jumbotron">
+ 				<h1>МЫ СОБЛЮДАЕМ  3 ПРАВИЛА В ОБУЧЕНИИ:</h1>
+				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  					<ol class="carousel-indicators">
+    					<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    					<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    					<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  					</ol>
+  					<div class="carousel-inner">
+    					<div class="carousel-item active">
+      						<h4>"Правило №1 - УНИВЕРСАЛЬНОСТЬ"<br><span style="font-style:normal;">Программа разработана как для тех кто никогда не держал в руках кисть,<br> так и для проф-визажистов, которые думают, что знают все о визаже.</span></h4>
+    					</div>
+    					<div class="carousel-item">
+     						<h4>"Правило №2 - ПРАКТИЧНОСТЬ"<br><span style="font-style:normal;">Никакой воды! Только практика на живых моделях и только с профессиональной косметикой!</span></h4>
+    					</div>
+    					<div class="carousel-item">
+      						<h4>"Правило №3 - ГИБКИЙ ГРАФИК"<br><span style="font-style:normal;">Выбирайте свой график обучения. Индивидуальные или групповые занятия!</span></h4>
+  						</div>
+  					</div>
+  					<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    					<span class="sr-only">Previous</span>
+  					</a>
+  					<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+    					<span class="sr-only">Next</span>
+  					</a>
+				</div>
+			</div>
+		</div>
+    </section>
+    <div class="container-fluid text-center" style="justify-content: center; padding-bottom:30px;">
+  	 	<h2 style=" text-shadow: 2px 2px 4px #000000;"><img src="images/correct2.png"  style="display:inline-block; padding-right: 5px;">Почему выбирают нашу школу?</h2>
+  		<br>
+  		<div class="row" style="padding-left:220px;">
+    		<div class="col-sm-5">
+      			<span class="glyphicon glyphicon-off"></span>
+      			<h2><strong>Учим авторским, понятным иработающим техникам макияжа</strong></h2>
+      			<p>Даём знания, авторские техники,<br> с помощью которых вы сможете действительно начать творить, создавать красоту и преображать людей</p>
+    		</div>
+    		<div class="col-sm-5">
+      			<span class="glyphicon glyphicon-heart"></span>
+      			<h2><strong>Тотальный разборкосметики - экономим ваши деньги</strong></h2>
+      			<p>Даём подробный список, который необходимо постепенно приобретать + консультируем в закрытом чате Whatsapp. Избавляем вас от покупки ненужной или неработающей косметики.</p>
+    		</div>
+    	</div>
+    	<br><br>
+  		<div class="row" style="padding-left:220px;">
+    		<div class="col-sm-5">
+      			<span class="glyphicon glyphicon-leaf"></span>
+      			<h2><strong>WOW-макияжи, от которых клиенты в восторге</strong></h2>
+      			<p>Учим незаурядным макияжам, которые легко продаются, и с которыми вы будете востребованными у клиентов</p>
+    		</div>
+    		<div class="col-sm-5">
+      			<span class="glyphicon glyphicon-certificate"></span>
+      			<h2><strong>Улучшаем ваше портфолио</strong></h2>
+      			<p>Учим красиво фотографировать и обрабатывать фотографии для вашего портфолио.Избавляем от страха перед моделями — рассказываем, где их искать и как договариваться.</p>
+    		</div>
+  		</div>
+	</div>
+	<div class="program">
+    	<section id="makeup">
+    		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  				<ol class="carousel-indicators">
+    				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    				<li data-target="#myCarousel" data-slide-to="1"></li>
+    				<li data-target="#myCarousel" data-slide-to="2"></li>
+  				</ol>
+  <!-- Wrapper for slides -->
+  				<div class="carousel-inner">
+    				<div class="carousel-item active">
+      					<img src="images/model-2303361_1920.jpg" alt="makeup">
+      					<div class="carousel-caption">
+        					<h3 style="text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;">КУРСЫ ПО МАКИЯЖУ - ДЛЯ СЕБЯ И ДЛЯ РАБОТЫ</h3>
+        					<p>ТЫ СТАНЕШЬ ВИЗАЖИСТОМ ВСЕГО ЧЕРЕЗ 1 МЕСЯЦ  С НУЛЯ В МОСКВЕ!</p>
+        					<p class="animated fadeInRight"><a href="makeup.html" class="btn btn-transparent btn-rounded btn-large">Подробнее</a></p>
+      					</div> 
+    				</div>
+    				<div class="carousel-item">
+      					<img src="images/black-and-white-black-and-white-close-up-713949 (1).jpg" alt="eyelash">
+      					<div class="carousel-caption">
+        					<h3 style="text-shadow:1px 1px 2px black, 0 0 25px blue, 0 0 5px black;">КУРСЫ ПО РЕСНИЦАМ ДЛЯ РАБОТЫ</h3>
+        					<p class="animated fadeInRight"><a href="eyelash.html" class="btn btn-transparent btn-rounded btn-large">Подробнее</a></p>
+      					</div> 
+    				</div>
+    				<div class="carousel-item">
+      					<img src="images/woman-2197950_1920.jpg" alt="eyebrow">
+      					<div class="carousel-caption">
+        					<h3 style="text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;" >КУРСЫ ПО БРОВЯМ+ПОВЫШЕНИЕ КВАЛИФИКАЦИИ БРОВИСТОВ ДЛЯ РАБОТЫ</h3>
+        					<p>САМЫЙ ОБШИРНЫЙ ПРАКТИЧЕСКИЙ КУРС ПРОФЕССИИ БРОВИСТ В МОСКВЕ!</p>
+        					<p class="animated fadeInRight"><a href="eyebrows.html" class="btn btn-transparent btn-rounded btn-large">Подробнее</a></p>
+      					</div> 
+    				</div>
+  				</div>
+  <!-- Left and right controls -->
+  				<a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+    				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    				<span class="sr-only">Previous</span>
+  				</a>
+  				<a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+    				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+    				<span class="sr-only">Next</span>
+  			 	</a>
+			</div>
+    	</section> 
+     	<div class="program" id="program" style="overflow: auto;">
+    		<h2 style="text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF; text-align: center; padding-top:50px; font-size:50px;">ЭТАПЫ</h2>
+    		<div class="containerprogram">
+    			<h3 style="text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue; padding-left: 30%; padding-top:5%;">Сам себе визажист</h3>
+  				<img src="images/girl-237871_640.jpg" alt="Avatar" class="image" style="width:90%">
+  				<div class="middle">
+    				<a href="selfmakeup.html"><button type="button" class="btn btn-outline-danger">Подробнее</button></a>
+  				</div>
+			</div>
+			<div class="containerprogram">
+    			<h3 style="text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue; padding-left: 30%; padding-top:5%;">Визажист-стилист</h3>
+  				<img src="images/attractive-beautiful-beauty-1525423.jpg" alt="Avatar" class="image" style="width:96%">
+  				<div class="middle">
+    				<a href="stilist.html"><button type="button" class="btn btn-outline-danger">Подробнее</button></a>
+  				</div>
+			</div>
+			<div class="containerprogram">
+    			<h3 style="text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue; padding-left: 30%; padding-top:5%;">Визажист-косметолог</h3>
+  				<img src="images/adult-attractive-beautiful-2065913.jpg"  alt="Avatar" class="image" style="width:90%">
+  				<div class="middle">
+    				<a href="kosmetolog.html"><button type="button" class="btn btn-outline-danger">Подробнее</button></a>
+  				</div>
+			</div>
+			<div class="containerprogram">
+    			<h3 style="text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue; padding-left: 30%; padding-top:10%;">Свадебный стилист</h3>
+  				<img src="images/beautiful-beauty-elegance-2146094.jpg" alt="Avatar" class="image" style="width:100%;">
+  				<div class="middle">
+    				<a href="wedding.html"><button type="button" class="btn btn-outline-danger">Подробнее</button></a>
+  				</div>
+			</div>
+			<div class="containerprogram">
+    			<h3 style="text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue; padding-left: 30%; padding-top:10%;">Креативный макияж + Retro Look (повышение квалификации)</h3>
+  				<img src="images/attractive-beautiful-beautiful-woman-2010812.jpg" alt="Avatar" class="image" style="width:93%; padding-left:80px; ">
+  				<div class="middle">
+    				<a href="retro.html"><button type="button" class="btn btn-outline-danger">Подробнее</button></a>
+  				</div>
+			</div>
+			<div class="containerprogram">
+    			<h3 style="text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue; padding-left: 30%; padding-top:10%;">Карандашная техника в макияже</h3>
+  				<img src="images/attractive-beautiful-beauty-1264442.jpg" alt="Avatar" class="image" style="width:90.5%">
+  				<div class="middle">
+    				<a href="technic.html"><button type="button" class="btn btn-outline-danger">Подробнее</button></a>
+  				</div>
+			</div>	
+		</div>
+  </div>
+  <br>
+  <h2 style="text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue; text-align: center; font-size:40px;">Работы учеников</h2>
+  <p style="text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue; text-align: center;">Все работы выполнены нашими учениками по окончанию курсов.</p>
+  <br>
+	<div style="height:78vh; width:100%; overflow:auto; ">
+		<div class="responsive">
+  			<div class="img">
+    			<a target="_blank" href="images/Katy_Tarbaeva_Make-Up_muaschool (8).jpg">
+      				<img src="images/Katy_Tarbaeva_Make-Up_muaschool (8).jpg" alt="Results" width="300" height="200">
+    			</a>
+  			</div>
+		</div>
+		<div class="responsive">
+  			<div class="img">
+    			<a target="_blank" href="images/IMG_3689-17-03-17-01-52.jpeg">
+      				<img src="images/IMG_3689-17-03-17-01-52.jpeg" alt="Results" width="600" height="400">
+    			</a>
+  			</div>
+		</div>
+		<div class="responsive">
+  			<div class="img">
+    			<a target="_blank" href="images/adult-beautiful-beautiful-woman-1849073.jpg">
+      				<img src="images/adult-beautiful-beautiful-woman-1849073.jpg" alt="Results" width="600" height="400">
+    			</a>
+  			</div>
+		</div>
+		<div class="responsive">
+  			<div class="img">
+    			<a target="_blank" href="images/Katy_Tarbaeva_Make-Up_muaschool (50).jpg">
+      				<img src="images/Katy_Tarbaeva_Make-Up_muaschool (50).jpg" alt="Results" width="600" height="400">
+    			</a>
+  			</div>
+		</div>
+		<div class="responsive">
+  			<div class="img">
+    			<a target="_blank" href="images/attractive-beautiful-beauty-247124.jpg">
+      				<img src="images/attractive-beautiful-beauty-247124.jpg" alt="Results" width="600" height="400">
+    			</a>
+  			</div>
+		</div>
+		<div class="responsive">
+  			<div class="img">
+    			<a target="_blank" href="images/artificial-flowers-attractive-beautiful-931004.jpg">
+      				<img src="images/artificial-flowers-attractive-beautiful-931004.jpg" alt="Results" width="600" height="400">
+    			</a>
+  			</div>
+		</div>
+		<div class="responsive">
+  			<div class="img">
+    			<a target="_blank" href="images/attractive-beautiful-beauty-1436297.jpg">
+      				<img src="images/attractive-beautiful-beauty-1436297.jpg" alt="Results" width="600" height="400">
+    			</a>
+  			</div>
+		</div>
+		<div class="responsive">
+  			<div class="img">
+    			<a target="_blank" href="images/attractive-beautiful-beauty-458768.jpg">
+      				<img src="images/attractive-beautiful-beauty-458768.jpg" alt="Results" width="600" height="400">
+    			</a>
+  			</div>
+		</div>
+		<div class="responsive">
+  			<div class="img">
+    			<a target="_blank" href="images/Katy_Tarbaeva_Make-Up_muaschool (12).jpg">
+      				<img src="images/Katy_Tarbaeva_Make-Up_muaschool (12).jpg" alt="Results" width="600" height="400">
+    			</a>
+  			</div>
+		</div>
+		<div class="responsive">
+  			<div class="img">
+    			<a target="_blank" href="images/Katy_Tarbaeva_Make-Up_muaschool (17).jpg">
+      				<img src="images/Katy_Tarbaeva_Make-Up_muaschool (17).jpg" alt="Results" width="600" height="400">
+    			</a>
+  			</div>
+		</div>
+		<div class="responsive">
+  			<div class="img">
+    			<a target="_blank" href="images/Katy_Tarbaeva_Make-Up_muaschool (20).jpg">
+      				<img src="images/Katy_Tarbaeva_Make-Up_muaschool (20).jpg" alt="Results" width="600" height="400">
+    			</a>
+  			</div>
+		</div>
+		<div class="responsive">
+  			<div class="img">
+    			<a target="_blank" href="images/Katy_Tarbaeva_Make-Up_muaschool (30).jpg">
+      				<img src="images/Katy_Tarbaeva_Make-Up_muaschool (30).jpg" alt="Results" width="600" height="400">
+    			</a>
+  			</div>
+		</div>
+		<div class="responsive">
+  			<div class="img">
+    			<a target="_blank" href="images/Katy_Tarbaeva_Make-Up_muaschool (33)jpg">
+      				<img src="images/Katy_Tarbaeva_Make-Up_muaschool (33).jpg" alt="Results" width="600" height="400">
+    			</a>
+  			</div>
+		</div>
+		<div class="responsive">
+  			<div class="img">
+    			<a target="_blank" href="images/attractive-beautiful-beauty-2462303.jpg">
+     				<img src="images/attractive-beautiful-beauty-2462303.jpg" alt="Results" width="600" height="400">
+    			</a>
+  			</div>
+		</div>
+		<div class="responsive">
+  			<div class="img">
+    			<a target="_blank" href="images/Katy_Tarbaeva_Make-Up_muaschool (66).jpg">
+      				<img src="images/Katy_Tarbaeva_Make-Up_muaschool (66).jpg" alt="Results" width="600" height="400">
+    			</a>
+  			</div>
+		</div>
+		<div class="responsive">
+  			<div class="img">
+    			<a target="_blank" href="images/Katy_Tarbaeva_Make-Up_muaschool (70).jpg">
+      				<img src="images/Katy_Tarbaeva_Make-Up_muaschool (70).jpg" alt="Results" width="600" height="400">
+    			</a>
+  			</div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+  	<div class="container-fluid" style="justify-content: center; padding-bottom:30px;">
+  	 	<h2 style=" text-shadow: 2px 2px 4px #000000; text-align: center;">ПОСЛЕ ОКОНЧАНИЯ КУРСА ВЫ СМОЖЕТЕ:</h2>
+  		<br>
+  		<div class="row" style="padding-left:230px;">
+    		<div class="col-sm-5">
+      			<h2><img src="images/correct1.png"  style="padding-right:5px;"><strong>ПОЛЬЗОВАТЬСЯ ПРОФЕССИОНАЛЬНОЙ КОСМЕТИКОЙ</strong></h2>
+      			<p>Будете применять в работе качественную косметику самых надежных брендов, формировать богатую палитру теней - под все цветотипы внешности;</p>
+    		</div>
+    		<div class="col-sm-5">
+      			<h2><img src="images/correct1.png"  style="padding-right:5px;"><strong>УЧИТЫВАТЬ ОСОБЕННОСТИ КЛИЕНТА</strong></h2>
+      			<p>Научитесь подбирать косметические средства по типу кожи клиента. Будете приятно удивлять барышень качеством тональных средств;</p>
+    		</div>
+    	</div>
+    	<br><br><br>
+  		<div class="row" style="padding-left:230px;">
+    		<div class="col-sm-5">
+      			<h2><img src="images/correct1.png"  style="padding-right:5px;"><strong>МОДЕЛИРОВАТЬ ФОРМУ ЛИЦА</strong></h2>
+      			<p>Узнаете, как работать с архитектурой лица, корректировать контур и визуально исправлять недостатки внешности;</p>
+    		</div>
+    		<div class="col-sm-5">
+      			<h2><img src="images/correct1.png"  style="padding-right:5px;"><strong>РАБОТАТЬ В РАЗЛИЧНЫХ СТИЛЯХ МАКИЯЖА</strong></h2>
+      			<p>Получите практический опыт в создании дневного, вечернего, голливудского макияжа. Будете уверенно применять самые актуальные техники визажа.</p>
+    		</div>
+  		</div>
+	</div>
+	<div class="container">	
+  		<div class="row">
+    		<div class="col-sm-5">
+      			<iframe width="471" height="264" src="https://www.youtube.com/embed/XGB7L7pOJug" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    		</div>
+    		<div class="col-sm-5">
+      			<iframe width="472" height="264" src="https://www.youtube.com/embed/MMEuPSaT8-I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    		</div>
+		</div>
+	</div>
+ 	<div class="container">
+ 		<h2 style=" text-shadow: 2px 2px 4px #000000; text-align: center;">Как проходит обучение?</h2>
+ 		<br>
+    	<table border=0 class="rectangle-list">
+        	<tr>
+            	<td>
+    				<ol>
+     					<li><p><span style="text-shadow: 2px 2px 4px #000000; text-align: center; font-size: 20px;"><strong>Занятия</strong></span><br>Занятия проходят в формате вебинаров. Просмотр видеозаписей лекций доступен в личном кабинете</p>
+    					</li> 
+     					<li><p><span style="text-shadow: 2px 2px 4px #000000; text-align: center; font-size: 20px;"><strong>Домашнее задание</strong></span><br>Тестирование или практическое домашнее задание с проверкой и обратной связью</p>
+    					</li>
+     					<li><p><span style="text-shadow: 2px 2px 4px #000000; text-align: center; font-size: 20px;"><strong>Сопровождение</strong></span><br>Тестирование или практическое домашнее задание с проверкой и обратной связью</p>
+    					</li>  
+     					<li><p><span style="text-shadow: 2px 2px 4px #000000; text-align: center; font-size: 20px;"><strong>Защита собственного проекта</strong></span><br>Получение сертификата, подтверждающего компетенцию</p>
+    					</li>                     
+					</ol>
+  				</td>
+			</tr>
+		</table>
+    </div>
+    <div  class="program2" style="background-image:url('images/cosmetics-3213368_1920.jpg'); padding-top:150px; ">
+    	<div class="container-fluid bg-grey text-center">
+  			<h1 style="font-family:Raleway Black; font-size: 40px; line-height: 1.4;">Гарантия 6 месяцев</h1>
+  			<div class="row">
+    			<div class="col-sm-5">
+        		</div>
+    			<div class="col-sm-7">
+					<h3 style="text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue; font-size: 30px;">Мы так сильно хотим, чтобы у Вас получилось, именно поэтому мы даем Гарантию на 6 месяцев. Если после обучения в течении 6 месяцев у Вас будут сложности с техникой макияжа, то отправляйте нам Вашу работу и мы с радостью позовем Вас на отработку этого макияжа. </h3> <br> <br>
+					<h4 style="text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue; font-size: 27px;">Вы - наше имя.<br>Мы работаем на результат.</h4>
+    			</div>
+  			</div>
+		</div>
+	</div>   	
+  	<section id="pay">
+    	<div class="container-fluid">
+  			<div class="text-center">
+    			<h2  style="text-shadow: 2px 2px 4px #000000;">СТОИМОСТЬ ОБУЧЕНИЯ</h2>
+    			<h4>Выберите формат обучения, который подходит именно вам!</h4>
+  			</div>
+  			<div class="row" style="display: inline-block;">
+    			<div class="col-sm-4">
+      				<div class="panel panel-default text-center">
+        				<div class="panel-heading">
+         					<h1 style="line-height: 1;">СТАНДАРТ<br><span style="font-size:16px;"> 20 мест</span><br><span style="color: red;">6 900₽</span></h1>
+        				</div>
+        				<div class="panel-body" style="color: blue;">
+             				<p><img src="images/correct1.png">Доступ к курсу 3 месяца, 24/1</p>
+          					<p><img src="images/correct1.png">36 видеоуроков на образовательной платформе</p>
+          					<p><img src="images/correct1.png">Проверка домашних заданий на образовательной платформе</p>
+          					<p><img src="images/correct1.png">Обратная связь на образовательной платформе</p>
+          					<p><img src="images/correct1.png">Make up book</p>
+          					<p><img src="images/correct1.png">Участие в партнерское программе</p>
+          					<p style="text-decoration: line-through;"><img src="images/correct1.png">Доступ к базе знаний на образовательной платформе</p>
+          					<p style="text-decoration: line-through;"><img src="images/correct1.png">Индивидуальный коучинг (возможность задавать любые вопросы преподавателю)</p>
+          					<p style="text-decoration: line-through;"><img src="images/correct1.png">2 скайп консультации по 1 часу или лично один на один с Татьяной</p>
+          					<p style="text-decoration: line-through;"><img src="images/correct1.png">2-х дневный интенсив в Москве в мае 2019г.</p>
+        					<div class="panel-footer">
+          						<h3>6 900₽</h3>
+          						<h4>per month</h4>
+          						<button class="btn btn-lg">ЗАПИСАТЬСЯ</button>
+        					</div>
+      					</div> 
+    				</div> 
+				</div>
+			 	<div class="col-sm-4">
+      				<div class="panel panel-default text-center">
+        				<div class="panel-heading">
+          					<h1 style="line-height: 1;">ВИП<br><span style="font-size:16px;">6 мест</span><br><span style="color: red;">13 900₽</span></h1>
+        				</div> 
+        				<div class="panel-body"style="color: blue;">
+          					<p><img src="images/correct1.png">Доступ к курсу 3 месяца, 24/1</p>
+          					<p><img src="images/correct1.png">36 видеоуроков на образовательной платформе</p>
+          					<p><img src="images/correct1.png">Проверка домашних заданий на образовательной платформе</p>
+          					<p><img src="images/correct1.png">Обратная связь на образовательной платформе</p>
+          					<p><img src="images/correct1.png">Make up book</p>
+          					<p><img src="images/correct1.png">Участие в партнерское программе</p>
+          					<p><img src="images/correct1.png">Доступ к базе знаний на образовательной платформе</p>
+          					<p><img src="images/correct1.png">Индивидуальный коучинг (возможность задавать любые вопросы преподавателю)</p>
+          					<p><img src="images/correct1.png">2 скайп консультации по 1 часу или лично один на один с Татьяной</p>
+          					<p style="text-decoration: line-through;"><img src="images/correct1.png">2-х дневный интенсив в Москве в мае 2019г.</p>
+        					<div class="panel-footer">
+          						<h3>13 900₽</h3>
+          						<h4>per month</h4>
+          						<button class="btn btn-lg">ЗАПИСАТЬСЯ</button>
+        					</div>
+    					</div>
+      				</div> 
+    			</div> 
+   				<div class="col-sm-4">
+         			<div class="panel panel-default text-center" style="color: blue;">
+        				<div class="panel-heading">
+        					<h1 style="line-height: 1;">ПРЕМИУМ<br><span style="font-size:16px;">2 места</span><br><span style="color: red;">59 900₽</span></h1>
+        				</div>
+        				<div class="panel-body">
+          					<p><img src="images/correct1.png">Доступ к курсу 3 месяца, 24/1</p>
+           					<p><img src="images/correct1.png">36 видеоуроков на образовательной платформе</p>
+          					<p><img src="images/correct1.png">Проверка домашних заданий на образовательной платформе</p>
+          					<p><img src="images/correct1.png">Обратная связь на образовательной платформе</p>
+          					<p><img src="images/correct1.png">Make up book</p>
+          					<p><img src="images/correct1.png">Участие в партнерское программе</p>
+          					<p><img src="images/correct1.png">Доступ к базе знаний на образовательной платформе</p>
+          					<p><img src="images/correct1.png">Индивидуальный коучинг (возможность задавать любые вопросы преподавателю)</p>
+          					<p><img src="images/correct1.png">2 скайп консультации по 1 часу или лично один на один с Татьяной</p>
+          					<p><img src="images/correct1.png">2-х дневный интенсив в Москве в мае 2019г.</p>
+        					<div class="panel-footer">
+          						<h3>59 900₽</h3>
+          						<h4>per month</h4>
+          						<button class="btn btn-lg">ЗАПИСАТЬСЯ</button>
+        					</div>
+    					</div>
+      				</div> 
+    			</div> 
+  			</div>
+		</div>
+    </section>
+    <section id="gift" class="text-center">
+    	<div class="container-fluid">
+    		<h1 style="text-shadow: 2px 2px 5px red;">ПОДАРОЧНЫЙ НАБОР</h1>
+    		<h3 style=" text-shadow: 0 0 3px #FF0000;">По завершению обучения студенту вручается сертификат и подарочный набор для использования в дальнейшей работе</h3>	
+  			<div class="row" style="display: inline-block;">
+    			<div class="col-sm-4">
+    				<div class="polaroid">
+            			<img src="images/diploma-1-white.png">
+  						<div class="container3">
+    						<h2>Сертификат</h2>
+  						</div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+      				<div class="polaroid">
+            			<img src="images/coupon-white.png">
+  		 				<div class="container3">
+    						<h2>Накопительная карта Скидка до 20%</h2>
+  						</div>
+					</div>
+    			</div> 
+   				<div class="col-sm-4">
+         			<div class="polaroid">
+            			<img src="images/make-up-white.png">
+  						<div class="container3">
+    						<h2>Подарок из инструментов и аксессуаров </h2>
+  						</div>
+					</div>
+  				</div>
+			</div>
+		</div>
+    </section>
+    <section id="contact" style="background-image: url('images/mystical-portrait-of-a-girl-1344632_1920.jpg');">
+    	<div class="container-fluid bg-grey">
+  			<h1 class="text-center" style="text-shadow: 2px 2px 4px #000000;">Оставьте заявку - и мы перезвоним!</h1>
+  			<div class="row">
+    			<div class="col-sm-5"></div>
+    		 	<div class="col-sm-7">
+      				<div class="row">
+        				<div class="col-sm-6 form-group">
+          					<input class="form-control" id="name" name="name" placeholder="Ваше имя *" type="text" required>
+        				</div>
+        				<div class="col-sm-6 form-group">
+          					<input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        				</div>
+     	 			</div>
+      				<textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      				<div class="row">
+        				<div class="col-sm-12 form-group">
+          					<button class="btn btn-default pull-right" type="submit">Отправить</button>
+        				</div>
+      				</div> 
+    			</div>
+  			</div>
+		</div>   	
+    </section>
+	<footer class="container-fluid text-center">
+  		<a href="#myPage" title="To Top">
+    		<span class="glyphicon glyphicon-chevron-up"></span>
+  		</a>		
+		<div class="row">
+			<div class="col-sm-4 col-md-6 text-left" >	
+				<p>ПОДПИШИТЕСЬ НА НАС:</p>
+				<span><img src="images/instagram.png" style="padding-right:5px; width:50px; "alt="instagram"><img src="images/vk.png" alt="instagram" style="width: 45px;"></span>
+				<p style="padding-top: 15px;">Принимаем к оплате:</p>
+				<span><img src="images/payment-visa-card-pay-checkout-transaction-bank-513.png" style="padding-right: 5px; width: 57px;" alt="visa"><img src="images/Master-Card-Blue-icon.png" style="width: 50px;" alt="master-card"></span>
+			</div>
+		 	<div class="col-sm-4 col-md-6 text-left">	
+       			<p><span class="glyphicon glyphicon-map-marker"></span>м. Парк Культуры, ул. Льва Толстого, д.19/2</p>
+       			<p><span class="glyphicon glyphicon-phone"></span>+7(495)255-25-11</p>
+       			<p><span class="glyphicon glyphicon-alarm"></span>с 10:00 до 20:00 ежедневно</p>
+       			<p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
+   			</div>
+   		</div>
+  	</footer>	
+</body>
+</html>
